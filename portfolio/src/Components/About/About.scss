@@ -1,0 +1,105 @@
+@import "../../globalColor";
+
+.about-section2 {
+  transition: 0.3s ease-in-out;
+}
+
+.about {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10rem;
+  overflow: hidden;
+
+  > .about-section2 > .about-text > h3 {
+    text-align: center;
+    font-weight: 100 !important;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 3rem;
+  }
+  > .about-section2 > .about-text > p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 20px;
+  }
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  > li {
+    list-style: none;
+    text-align: center;
+
+    > p {
+      color: gray;
+    }
+  }
+}
+
+.skills ul > li > i {
+  margin: 25px;
+  font-size: 3rem;
+  color: gray;
+  &:hover {
+    color: #645beb;
+    transition: 0.3s;
+  }
+}
+
+.about-desc {
+  margin-top: 60px;
+  > p {
+    margin: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+}
+
+.about-section1 {
+  margin: 90px;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .about > .about-section2 > .about-text > h3 {
+    font-size: 2rem;
+  }
+  .about > .about-section2 > .about-text > p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 735px) {
+  .about {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+  .about-section1 {
+    display: none;
+  }
+  .about-text > p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 490px) {
+  .skills > .first-row > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-desc > p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 396px) {
+  .about > .about-section2 > .about-text > h3 {
+    font-size: 1.5rem;
+  }
+}

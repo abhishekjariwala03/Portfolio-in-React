@@ -1,0 +1,29 @@
+// Variables
+$bg-color: RGB(23, 28, 40);
+$text-color: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3f3d56;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

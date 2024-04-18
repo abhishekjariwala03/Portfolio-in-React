@@ -1,0 +1,182 @@
+@import "../../globalColor";
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+.greet-main {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 9rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  > .greeting-main {
+    display: flex;
+  }
+}
+
+.greeting-text {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.greeting-text-p {
+  letter-spacing: 2px;
+  text-transform: initial;
+  font-family: "Mukta", sans-serif;
+  font-size: 1.5rem;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: flex-start;
+  > .btn {
+    padding: 15px;
+    border-radius: 3px;
+    margin-right: 20px;
+    background-color: $buttonColor;
+    color: white;
+    border: none;
+    > a {
+      text-decoration: none;
+      background: none;
+      font-weight: 600;
+    }
+  }
+}
+
+.btn:hover {
+  background-color: #5f3286;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.greet-gif {
+  position: relative;
+}
+
+#code1 {
+  animation: codeanimation 3s linear;
+}
+
+@keyframes codeanimation {
+  from {
+    transform: translate(-60px);
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  svg {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  svg {
+    height: 30rem;
+    width: 30rem;
+  }
+  .greeting-text {
+    font-size: 1.9rem;
+  }
+  .greeting-text-p {
+    font-size: 1.2rem;
+  }
+  .card > .Content > button {
+    margin-top: 28px;
+  }
+}
+@media screen and (max-width: 861px) {
+  .socials {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+  svg {
+    height: 25rem;
+    width: 22rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .greeting-text {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 735px) {
+  .greet-main {
+    width: 90%;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .greeting-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .greeting-text {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .greeting-text-p {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .wave-emoji {
+    margin-left: 10px;
+  }
+
+  .connect {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .greet-gif {
+    order: -1;
+  }
+
+  .greet-gif svg {
+    width: 100%;
+    height: auto;
+  }
+}
