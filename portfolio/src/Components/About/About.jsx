@@ -221,36 +221,6 @@ function About() {
                   </li>
                 </ul>
               </div>
-              {/* <div className="second-row">
-                <ul
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <li>
-                    <i className="fas fa-database"></i>
-                    <p>mysql</p>
-                  </li>
-                  <li>
-                    <i className="fas fa-fire"></i>
-                    <p>Firebase</p>
-                  </li>
-                  <li>
-                    <i className="fab fa-java"></i>
-                    <p>Java</p>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-code-branch"></i>
-                    <p>Git</p>
-                  </li>
-                  <li>
-                    <i className="fab fa-github"></i>
-                    <p>Github</p>
-                  </li>
-                </ul>
-              </div> */}
             </div>
             <div className="about-desc">
               <p>{aboutMe.subtitle2}</p>
