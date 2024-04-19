@@ -24,7 +24,7 @@ function Home() {
               </button>
 
               <button className="btn">
-                <a href="https://drive.google.com/file/d/1Qk-MOInlQMVf_jlqDldvuSydPQBZdz-9/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1ev0hJx_a7-jUdq5ezOo7_3nkkW0Cl9UE/view?usp=sharing">
                   See My Resume
                 </a>
               </button>
