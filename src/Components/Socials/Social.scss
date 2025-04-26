@@ -1,0 +1,38 @@
+.socials {
+  font-size: 2rem;
+  margin-top: 30px;
+  > a {
+    margin: 13px;
+    width: 300px;
+    color: red;
+  }
+}
+
+.git:hover {
+  color: #424343;
+  transition: 0.5s;
+}
+
+.medium:hover {
+  color: #424343;
+  transition: 0.5s;
+}
+
+.insta:hover {
+  color: #c13584;
+  transition: 0.5s;
+}
+
+.linkdin:hover {
+  color: #0077b5;
+  transition: 0.5s;
+}
+
+.x:hover {
+  color: #424343;
+  transition: 0.5s;
+}
+
+.icon-button {
+  margin-bottom: 10px;
+}

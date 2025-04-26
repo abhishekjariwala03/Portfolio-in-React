@@ -1,0 +1,84 @@
+@import "../../globalColor";
+
+.contact-main {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-2 > h4 {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+
+.contact-2 > p {
+  margin-top: 15px;
+  color: gray;
+  text-transform: uppercase;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  > input,
+  textarea {
+    padding: 10px !important;
+    border: none !important;
+    background-color: #12161f !important;
+    margin-top: 10px !important;
+  }
+}
+
+.btnSub {
+  background-color: #7c3aed;
+  padding: 10px;
+  width: 140px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.swal-modal {
+  background-color: #171c28;
+}
+.swal-text {
+  color: rgb(246, 246, 246);
+  background: none;
+}
+.swal-title {
+  color: rgb(248, 245, 245);
+  background: none;
+}
+
+.swal-button {
+  background-color: #344f5c;
+  color: #fff;
+}
+@media screen and (max-width: 970px) {
+  .contact-main > .contact-1 > img {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  .contact-main > .contact-1 > img {
+    width: 24rem;
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 735px) {
+  .contact-1 {
+    display: none;
+  }
+  .contact-2 {
+    width: 95vw;
+  }
+  .contact-2 > h4 {
+    text-align: center;
+  }
+  .contact-2 > p {
+    text-align: center;
+  }
+}

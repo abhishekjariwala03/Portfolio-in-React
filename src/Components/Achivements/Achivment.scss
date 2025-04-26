@@ -1,0 +1,112 @@
+@import "../../globalColor";
+
+.achivment-main {
+  margin: 30px;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+p {
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.main-achivment {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  background-color: #171c28;
+  height: 350px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid hsla(0, 0%, 83%, 0.397);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px -20px #d9dbdf;
+  transition: all 0.25s ease;
+
+  &:hover {
+    box-shadow: 0 20px 35px -23px #d9dbdf;
+  }
+
+  > .imageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+      width: 200px;
+      color: white;
+    }
+  }
+
+  > .Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > h3 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    > p {
+      text-align: center;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    > button {
+      padding: 15px;
+      border-radius: 3px;
+      background-color: $buttonColor;
+      color: white;
+      margin-top: 50px;
+      border: none;
+      > a {
+        text-decoration: none;
+        background: none;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .main-achivment {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .achivment-main > h3 {
+    text-align: center;
+  }
+  .achivment-main > p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 668px) {
+  .main-achivment {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card > .imageDiv {
+    margin-top: 20px;
+  }
+  .card > .Content {
+    margin-top: auto;
+  }
+  .card > .Content > button {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 396px) {
+  .achivment-main > h3 {
+    font-size: 1.5rem;
+  }
+  .card > .Content > h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

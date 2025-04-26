@@ -1,0 +1,76 @@
+.mainSection_Experiance {
+  padding: 25px;
+
+  > .experiance {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    > .exp {
+      background-color: #171c28;
+      height: 350px;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid hsla(0, 0%, 83%, 0.397);
+      border-radius: 10px;
+      box-shadow: 0 10px 30px -20px #d9dbdf;
+      transition: all 0.25s ease;
+
+      &:hover {
+        box-shadow: 0 20px 35px -23px #d9dbdf;
+      }
+
+      > .imageDiv {
+        display: flex;
+        justify-content: center;
+      }
+
+      > .content {
+        text-align: center;
+        margin-top: 20px;
+
+        .skills {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .mainSection_Experiance > .experiance > .exp > .content {
+    margin-top: 5px;
+  }
+  .mainSection_Experiance > .experiance > .exp > .content .skills {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 794px) {
+  p {
+    font-size: 0.89rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainSection_Experiance > .experiance > .exp {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .mainSection_Experiance > h3 {
+    text-align: center;
+  }
+  .mainSection_Experiance > .experiance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mainSection_Experiance > .experiance > .exp {
+    width: auto;
+  }
+  .skills {
+    text-align: center;
+  }
+}
