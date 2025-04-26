@@ -1,0 +1,107 @@
+@import "../../globalColor";
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+img {
+  border-radius: 5px;
+}
+.project-card {
+  display: flex;
+  // background-color: azure;
+  width: 80%;
+  margin: 30px auto;
+  padding: 40px;
+  border: 5px solid rgb(42, 41, 55);
+  border-radius: 10px;
+
+  > .content {
+    margin: auto 8rem;
+    > h3 {
+      margin-bottom: 20px;
+    }
+
+    > p {
+      margin-bottom: 50px;
+    }
+    > .btnDiv > .btn {
+      padding: 5px;
+      margin-right: 12px;
+      width: 100px;
+      height: 2rem;
+      border-radius: 3px;
+      background-color: $buttonColor;
+      color: white;
+      margin-top: 20px;
+      border: none;
+      > a {
+        text-decoration: none;
+        background: none;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .project-card > .content {
+    margin: auto 5rem;
+  }
+}
+@media screen and (max-width: 861px) {
+  .project-card > .content {
+    margin: auto 2rem;
+  }
+}
+@media screen and (max-width: 735px) {
+  .project-card > .content > .btn {
+    margin-right: 5px;
+  }
+  .project-card > .content > p {
+    margin-bottom: 15px;
+  }
+  .content > h4 {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 735px) {
+  .projectMain > h3 {
+    text-align: center;
+  }
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card > .project-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content h3 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .content > p,
+  h4 {
+    text-align: center;
+  }
+  .btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 490px) {
+  .project-card {
+    padding: 40px 20px 40px 20px;
+  }
+}
+@media screen and (max-width: 396px) {
+  .greeting-text {
+    font-size: 1.2rem;
+  }
+  .greeting-text-p {
+    font-size: 1rem;
+  }
+}

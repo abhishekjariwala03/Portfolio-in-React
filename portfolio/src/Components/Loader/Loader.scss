@@ -1,0 +1,20 @@
+.loaderDiv {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1110px) {
+  svg {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 735px) {
+  svg {
+    height: 5rem;
+    width: 5rem;
+  }
+}
